@@ -3,38 +3,26 @@ read_text_file();
 
 
 
-
-iterators
+#include <stdio.h>
 
 int main() {
 	setup();
-while(true){
-loop();
-}
-}
-
-var file = null;
-setup(){
-file = read_binary_file();
-}
-loop(){
-file
+	while(true){
+		loop();
+	}
 }
 
 
-#include <stdio.h>
-int main() {
-    FILE* file = fopen("example.txt", "r");
-    if (file) {
-        const int bufferSize = 256;
-        char buffer[bufferSize];
+	
+    // FILE* file = fopen("main.c", "r");
+    // if (file) {
+    //     const int bufferSize = 256;
+    //     char buffer[bufferSize];
         
-        while (fgets(buffer, bufferSize, file)) {
-            std::cout << buffer;
-        }
+    //     while (fgets(buffer, bufferSize, file)) {
+    //         printf("%s", buffer);
+    //     }
         
-        fclose(file);
-    }
+    //     fclose(file);
+    // }
     
-    return 0;
-}
