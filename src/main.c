@@ -48,8 +48,9 @@ char* get_next_line(char *buffer, int n, FILE *stream, int* line_number) {
         }
     }
     
-    
-    *line_number = number_of_newlines + 1;
+    if (line_number != NULL) {
+        *line_number = number_of_newlines + 1;
+    }
     
     //last_new_line_offset = ftell(stream);
     
@@ -66,7 +67,7 @@ void loop() {
     char buffer[10];
     while(get_next_line(buffer, sizeof(buffer), file, &buffer_current_line_number) != NULL) {
         if (buffer_current_line_number != buffer_previous_line_number) {
-            printf("\n%d: ", buffer_current_line_number);
+            printf("%d: ", buffer_current_line_number);
         }
         printf("%s", buffer);
         buffer_previous_line_number = buffer_current_line_number;
