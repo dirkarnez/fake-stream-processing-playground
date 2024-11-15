@@ -40,11 +40,9 @@ char* get_next_line(char *buffer, int n, FILE *stream, int* line_number) {
     // // Read lines until the nth line or end of file
     char* ret = fgets(buffer, n, stream);
     for (int i = 0; i < sizeof(buffer); i++) {
-        
         if (buffer[i] == '\n') {
             buffer[i] = '\0';
-            
-           // fseek( stream, -5 , SEEK_CUR );
+            // fseek( stream, -5 , SEEK_CUR );
             found_newline = 1;
             break;
         }
