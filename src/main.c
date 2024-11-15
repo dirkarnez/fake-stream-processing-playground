@@ -14,57 +14,64 @@ void setup() {
     assert(file);
 }
 
-unsigned int nth_line = -1;
 unsigned int last_new_line_offset = -1;
+unsigned int number_of_newlines = 0;
 
+int found_newline = 0;
 // while(get_next_line(buffer, sizeof(buffer), file)) {
         
-int get_next_line(char *buffer, int n, FILE *stream, int* line_number) {
+char* get_next_line(char *buffer, int n, FILE *stream, int* line_number) {
     if (stream == NULL || n < 1 || buffer == NULL) {
-        return -1; // Invalid input
+        return NULL;
     }
     
-    *line_number = 0;
     
     // fgets(str, n, stream);
-    // int len = ftell(stream);
+    
     // printf("%s = %d 字节\n", str, len);
     
 
-    // int current_line = 0;
-
-    // // Read lines until the nth line or end of file
-    while (fgets(buffer, n, stream)) {
-        for (int i = 0; i < sizeof(buffer); i++) {
-            if (buffer[i] == '\n') {
-                *line_number = *line_number + 1;
-                break;
-            }
-        }
+    if (found_newline != 0) {
+         number_of_newlines = number_of_newlines + 1;
+         found_newline = 0;
     }
 
+    found_newline = 0;
+    // // Read lines until the nth line or end of file
+    char* ret = fgets(buffer, n, stream);
+    for (int i = 0; i < sizeof(buffer); i++) {
+        
+        if (buffer[i] == '\n') {
+            buffer[i] = '\0';
+            
+           // fseek( stream, -5 , SEEK_CUR );
+            found_newline = 1;
+            break;
+        }
+    }
+    
+    
+    *line_number = number_of_newlines + 1;
+    
+    //last_new_line_offset = ftell(stream);
+    
     // Return -1 if the nth line does not exist
-    return -1;
+    return ret;
 }
 
-// fseek( fp, 7, SEEK_SET );
+// 
  
 void loop() {
-    //char buffer[bufferSize];
-        
-    // while (fgets(buffer, bufferSize, file)) {
-    //     printf("->%s<-", buffer);
-    // }
+    int buffer_current_line_number = -1;
+    int buffer_previous_line_number = -1;
     
-    // char* line = 
-    // get_nth_line(i, file);
-    // i++;
-     
-     
-    int line_number = -1;
-    char buffer[5];
-    while(get_next_line(buffer, sizeof(buffer), file, &line_number)) {
-        printf("%d: %s", line_number, buffer);
+    char buffer[10];
+    while(get_next_line(buffer, sizeof(buffer), file, &buffer_current_line_number) != NULL) {
+        if (buffer_current_line_number != buffer_previous_line_number) {
+            printf("\n%d: ", buffer_current_line_number);
+        }
+        printf("%s", buffer);
+        buffer_previous_line_number = buffer_current_line_number;
     }
 }
 
@@ -75,9 +82,8 @@ void clean() {
 
 int main() {
 	setup();
-// 	while(1){
-// 		loop();
-// 	}
-	loop();
+	while(1){
+		loop();
+	}
 	clean();
 }
