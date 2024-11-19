@@ -10,3 +10,5 @@ fake-stream-processing-playground
 
 ### What to do
 - Mel-Spectrogram, MFCC
+- FFT
+  - [jj's useful and ugly FFT page](https://jjj.de/fft/fftpage.html)
