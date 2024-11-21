@@ -14,3 +14,5 @@ fake-stream-processing-playground
   - [jj's useful and ugly FFT page](https://jjj.de/fft/fftpage.html)
 - syntax-highlighting testing
   - read text by character, one-by-one
+- Circuit analysis
+    - Opamp feedback
