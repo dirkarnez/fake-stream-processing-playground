@@ -12,6 +12,9 @@ fake-stream-processing-playground
 
 ### Input interface
 - .wave audio (PCM)
+- serial
+  - kermit
+    - [串口工具Kermit_sudo kermit-CSDN博客](https://blog.csdn.net/u013029731/article/details/88877350)
 
 ### What to do
 - Mel-Spectrogram, MFCC
