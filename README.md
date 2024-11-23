@@ -9,6 +9,7 @@ fake-stream-processing-playground
 - [ ] May be useless: Simulate interrupt (use multi-threading)
 - [ ] plotting
 - [ ] reporting
+- [ ] lookahead (the ability to anticipate incoming signals)
 
 ### Input interface
 - .wave audio (PCM)
