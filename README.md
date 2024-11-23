@@ -15,6 +15,7 @@ fake-stream-processing-playground
 - serial
   - kermit
     - [串口工具Kermit_sudo kermit-CSDN博客](https://blog.csdn.net/u013029731/article/details/88877350)
+- [q/q_io at master · cycfi/q](https://github.com/cycfi/q/tree/master/q_io)
 
 ### What to do
 - Mel-Spectrogram, MFCC
