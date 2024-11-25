@@ -10,6 +10,11 @@ fake-stream-processing-playground
 - [ ] plotting
 - [ ] reporting
 - [ ] lookahead (the ability to anticipate incoming signals)
+- [ ] different stream styles
+  - [ ] plain main while true
+  - [ ] setup loop (https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/main.cpp)
+  - [ ] vst3 process signature `process (Vst::ProcessData& data)`
+    - https://github.com/steinbergmedia/vst3_example_plugin_hello_world/blob/main/source/helloworldprocessor.cpp#L67
 
 ### Input interface
 - .wave audio (PCM)
