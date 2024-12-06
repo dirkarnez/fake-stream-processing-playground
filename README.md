@@ -38,3 +38,8 @@ fake-stream-processing-playground
   - read text by character, one-by-one
 - Circuit analysis
     - Opamp feedback
+- Control systems
+  - feedback loop (PID)
+- Music theory
+  - parallel fifths / octaves checking
+  - SATB
