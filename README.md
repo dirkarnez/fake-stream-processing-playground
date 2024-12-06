@@ -43,3 +43,4 @@ fake-stream-processing-playground
 - Music theory
   - parallel fifths / octaves checking
   - SATB
+  - voicing
