@@ -44,3 +44,4 @@ fake-stream-processing-playground
   - parallel fifths / octaves checking
   - SATB
   - voicing
+  - Counterpoint
