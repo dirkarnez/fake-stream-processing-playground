@@ -22,6 +22,7 @@ fake-stream-processing-playground
   - kermit
     - [串口工具Kermit_sudo kermit-CSDN博客](https://blog.csdn.net/u013029731/article/details/88877350)
   - https://github.com/stm32duino/stm32flash/blob/main/serial_w32.c#L193
+  - web serial (cross-compilable to web assembly)
 - [q/q_io at master · cycfi/q](https://github.com/cycfi/q/tree/master/q_io)
 
 ### Output interface
