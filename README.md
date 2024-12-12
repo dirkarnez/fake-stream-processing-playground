@@ -43,6 +43,8 @@ fake-stream-processing-playground
     - Opamp feedback
 - Control systems
   - feedback loop (PID)
+- Accounting
+  - time series transaction processing
 - Music theory
   - parallel fifths / octaves checking
   - SATB
