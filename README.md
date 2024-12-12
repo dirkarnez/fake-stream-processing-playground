@@ -33,6 +33,8 @@ fake-stream-processing-playground
 ### What to do
 - Mel-Spectrogram, MFCC
 - Headless audio effects
+  - Compressor
+    - https://chromium.googlesource.com/chromium/blink/+/refs/heads/main/Source/platform/audio/DynamicsCompressorKernel.cpp
 - FFT
   - [jj's useful and ugly FFT page](https://jjj.de/fft/fftpage.html)
 - syntax-highlighting testing
