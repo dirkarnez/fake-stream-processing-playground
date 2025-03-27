@@ -48,6 +48,7 @@ fake-stream-processing-playground
 - Music theory
   - parallel fifths / octaves checking
   - SATB
+    - [A Beginner's Guide to Four-Part Harmony - Music Theory - YouTube](https://www.youtube.com/watch?v=GoUQ_WHCe48)
     - [A Beginner's Guide to 4-Part Harmony: Notation, Ranges, Rules & Tips | School of Composition](https://www.schoolofcomposition.com/beginners-guide-to-4-part-harmony/#How-to-Write-4-Part-Harmony-the-Basics)
   - voicing
   - Counterpoint
