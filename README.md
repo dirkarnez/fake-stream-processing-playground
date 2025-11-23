@@ -6,7 +6,8 @@ fake-stream-processing-playground
   - fake a hard loop intervals (real-time system)
   - allowing adjustments (sometimes slower / faster)
   - unconstant interval (e.g. undeterministic / noisy system)
-- [ ] May be useless: Simulate interrupt (use multi-threading)
+- [ ] May be useless: Simulate interrupt (~use multi-threading~)
+  - https://github.com/ETLCPP/etl/blob/master/examples/FunctionInterruptSimulation/FunctionInterruptSimulation.cpp 
 - [ ] reporting
 - [ ] lookahead (the ability to anticipate incoming signals)
 - [ ] different stream styles
@@ -53,4 +54,5 @@ fake-stream-processing-playground
     - [A Beginner's Guide to 4-Part Harmony: Notation, Ranges, Rules & Tips | School of Composition](https://www.schoolofcomposition.com/beginners-guide-to-4-part-harmony/#How-to-Write-4-Part-Harmony-the-Basics)
   - voicing
   - Counterpoint
+
 
