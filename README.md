@@ -15,6 +15,9 @@ fake-stream-processing-playground
   - [ ] setup loop (https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/main.cpp)
   - [ ] vst3 process signature `process (Vst::ProcessData& data)`
     - https://github.com/steinbergmedia/vst3_example_plugin_hello_world/blob/main/source/helloworldprocessor.cpp#L67
+      - `// Ex: algo.process (data.inputs[0].channelBuffers32, data.outputs[0].channelBuffers32, data.numSamples);`
+      - `process(T* src, T* dst, int32 numSamples, bool silentIn)`
+    - [vst3_tutorials/advanced-techniques-tutorial/README.md at 33b73dfbb87f3fde3bce8c0a10cae934dc66ad34 · steinbergmedia/vst3_tutorials](https://github.com/steinbergmedia/vst3_tutorials/blob/33b73dfbb87f3fde3bce8c0a10cae934dc66ad34/advanced-techniques-tutorial/README.md?plain=1#L49)
   - [ ] Reaper script
     - [REAPER | JSFX Programming](https://www.reaper.fm/sdk/js/js.php)
   - [ ] [`AudioWorkletProcessor` - Web API | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/AudioWorkletProcessor)
@@ -56,6 +59,7 @@ fake-stream-processing-playground
     - [A Beginner's Guide to 4-Part Harmony: Notation, Ranges, Rules & Tips | School of Composition](https://www.schoolofcomposition.com/beginners-guide-to-4-part-harmony/#How-to-Write-4-Part-Harmony-the-Basics)
   - voicing
   - Counterpoint
+
 
 
 
