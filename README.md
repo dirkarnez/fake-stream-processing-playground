@@ -10,11 +10,13 @@ fake-stream-processing-playground
   - https://github.com/ETLCPP/etl/blob/master/examples/FunctionInterruptSimulation/FunctionInterruptSimulation.cpp 
 - [ ] reporting
 - [ ] lookahead (the ability to anticipate incoming signals)
-- [ ] different stream styles
+- [ ] different stream styles (interface)
   - [ ] plain main while true
   - [ ] setup loop (https://github.com/arduino/ArduinoCore-avr/blob/master/cores/arduino/main.cpp)
   - [ ] vst3 process signature `process (Vst::ProcessData& data)`
     - https://github.com/steinbergmedia/vst3_example_plugin_hello_world/blob/main/source/helloworldprocessor.cpp#L67
+  - [ ] Reaper script
+    - [REAPER | JSFX Programming](https://www.reaper.fm/sdk/js/js.php)
   - [ ] [`AudioWorkletProcessor` - Web API | MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/AudioWorkletProcessor)
 - [ ] Super advanced: this repo should make room for embeded programming so the user code can switch to embedded toolchains seamlessly
 
@@ -54,5 +56,6 @@ fake-stream-processing-playground
     - [A Beginner's Guide to 4-Part Harmony: Notation, Ranges, Rules & Tips | School of Composition](https://www.schoolofcomposition.com/beginners-guide-to-4-part-harmony/#How-to-Write-4-Part-Harmony-the-Basics)
   - voicing
   - Counterpoint
+
 
 
