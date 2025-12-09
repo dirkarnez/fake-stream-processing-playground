@@ -31,6 +31,7 @@ fake-stream-processing-playground
   - https://github.com/stm32duino/stm32flash/blob/main/serial_w32.c#L193
   - web serial (cross-compilable to web assembly)
 - [q/q_io at master · cycfi/q](https://github.com/cycfi/q/tree/master/q_io)
+- [ndjson/ndjson.js: Streaming line delimited json parser + serializer](https://github.com/ndjson/ndjson.js)
 
 ### Output interface
 - audio stream
@@ -59,6 +60,7 @@ fake-stream-processing-playground
     - [A Beginner's Guide to 4-Part Harmony: Notation, Ranges, Rules & Tips | School of Composition](https://www.schoolofcomposition.com/beginners-guide-to-4-part-harmony/#How-to-Write-4-Part-Harmony-the-Basics)
   - voicing
   - Counterpoint
+
 
 
 
